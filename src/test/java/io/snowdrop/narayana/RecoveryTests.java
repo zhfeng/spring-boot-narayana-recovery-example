@@ -67,7 +67,7 @@ public class RecoveryTests {
             targetClass = "com.arjuna.ats.arjuna.coordinator.BasicAction",
             targetMethod = "phase2Commit",
             targetLocation = "ENTRY",
-            helper = "BytemanHelper",
+            helper = "io.snowdrop.narayana.BytemanHelper",
             action = "incrementCommitsCounter(); failFirstCommit($0.get_uid());")
     public void testCrashBeforeCommit() throws Exception {
         // Setup dummy XAResource and its recovery helper
