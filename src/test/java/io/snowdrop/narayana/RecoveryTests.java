@@ -81,7 +81,7 @@ public class RecoveryTests {
             // Byteman rule will cause commit to fail
             transactionManager.commit();
             fail("Exception was expected");
-        } catch (Throwable ignored) {
+        } catch (Exception ignored) {
         }
 
         // Just after crash message and entry shouldn't be available
